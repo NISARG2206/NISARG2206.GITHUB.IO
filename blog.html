@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nisarg's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-800 to-indigo-900 text-gray-100 min-h-screen">
+
+  <header class="bg-white bg-opacity-10 shadow p-4 flex justify-between items-center backdrop-blur">
+    <h1 class="text-xl font-bold text-white">Nisargkumar Patel</h1>
+    <nav class="space-x-4 text-white">
+      <a href="index.html" class="hover:text-yellow-400">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="projects.html" class="hover:text-yellow-300">Projects</a>
+      <a href="blog.html" class="text-yellow-300">Blog</a>
+      <a href="resume.html" class="hover:text-yellow-300">Resume</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- Blog Section -->
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold mb-8"><span class="text-yellow-400">My Blog</span></h2>
+
+    <div class="space-y-8">
+      <!-- Blog 1 -->
+      <article class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-gray-600 mb-4"><strong> I Built a Face Recognition System</strong></h3>
+        <p class="text-gray-600 mb-4">
+          I explain step-by-step how I built a real-time face recognition system using Python and OpenCV.
+        </p>
+        <div class="text-gray-700 space-y-4 text-sm leading-relaxed">
+          <p><strong>Intro:</strong> Have you ever wondered how your phone unlocks just by looking at your face? I was fascinated by this too. That’s why I decided to build my own real-time face recognition system using Python and OpenCV.</p>
+
+          <p><strong>Step 1: Setting Up the Environment</strong><br>
+          Installed libraries:<br>
+          <code class="bg-gray-100 px-2 py-1 rounded inline-block">pip install opencv-python numpy face_recognition</code><br>
+          I used <code>face_recognition</code> for face encoding and <code>OpenCV</code> for camera and image processing.</p>
+
+          <p><strong>Step 2: Capturing and Encoding Faces</strong><br>
+          I encoded known faces using <code>face_recognition.face_encodings()</code>, which converts faces into unique numerical vectors.</p>
+
+          <p><strong>Step 3: Real-time Face Detection</strong><br>
+          Using OpenCV, I captured webcam frames and compared detected faces with known encodings, then displayed names in real time.</p>
+
+          <p><strong>Step 4: Optimization</strong><br>
+          To reduce lag:<br>
+          - Processed alternate frames<br>
+          - Resized frames<br>
+          - Used threading</p>
+
+          <p><strong>Final Result:</strong> The system recognized faces instantly and accurately.</p>
+
+          <p class="text-green-700 font-medium">✅ Tip: Keep your dataset clean for better performance.</p>
+        </div>
+        <a href="#" class="text-blue-600 mt-4 inline-block font-medium">Read More</a>
+      </article>
+
+      <!-- Blog 2 -->
+      <article class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-gray-600 mb-4"><strong>Top Lessons from My Full Stack Course</strong></h3>
+        <p class="text-gray-600 mb-4">
+          Learning Full Stack development opened up a lot of opportunities for me. Here’s what I found most valuable.
+        </p>
+        <div class="text-gray-700 space-y-4 text-sm leading-relaxed">
+          <p><strong>Intro:</strong> I recently completed a Full Stack Development course—and it was a game-changer. From front-end to back-end, I learned how real-world web apps are built.</p>
+
+          <p><strong>1. HTML/CSS/JS Are Still King</strong><br>
+          Mastering the basics gave me a solid foundation before diving into frameworks.</p>
+
+          <p><strong>2. JavaScript Frameworks Are Powerful</strong><br>
+          I learned React, which made building UIs structured and efficient with components and states.</p>
+
+          <p><strong>3. Backend Isn’t Scary Anymore</strong><br>
+          Node.js, Express, and MongoDB helped me understand server-side development and APIs.</p>
+
+          <p><strong>4. Git & Deployment Skills Are a Must</strong><br>
+          Using GitHub, Vercel, and Render helped me deploy real-world applications.</p>
+
+          <p><strong>5. Problem-Solving Matters</strong><br>
+          Debugging and building projects made me a better thinker and developer.</p>
+
+          <p class="text-blue-700 font-medium">💡 Lesson: Full Stack isn’t about learning everything at once—it's about connecting one skill at a time.</p>
+        </div>
+        <a href="#" class="text-blue-600 mt-4 inline-block font-medium">Read More</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 text-sm text-gray-500">© 2025 Nisarg
+    <div CO>Made possible with help of AI assistance</div></footer>
+  
+</body>
+</html>
